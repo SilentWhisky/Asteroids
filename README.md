@@ -8,3 +8,5 @@ and practicing OOT.
 ~ made a Rotation to the player, so he can rotate left and right
 
 ~ made a Forward and Backward movement for the player
+
+~ made astreoids spawn in random positions and have contant speed going forward
