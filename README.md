@@ -4,4 +4,7 @@
 and practicing OOT.
 
 ~ made a BLACK screen window, and Drawn the player [a Trinagle with a CircleShape HITBOX]
+
 ~ made a Rotation to the player, so he can rotate left and right
+
+~ made a Forward and Backward movement for the player
