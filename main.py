@@ -3,6 +3,7 @@
 # throughout this file
 import pygame
 import sys
+import random
 from constants import*
 from player import*
 from asteroid import*
@@ -41,7 +42,7 @@ def main():
                 sys.exit()
             for bullet in shots:
                 if asteroid.collision(bullet):
-                    asteroid.kill()
+                    asteroid.split()
 
         screen.fill(color="black")
         for thing in drawable:
