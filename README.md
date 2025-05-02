@@ -10,3 +10,5 @@ and practicing OOT.
 ~ made a Forward and Backward movement for the player
 
 ~ made astreoids spawn in random positions and have contant speed going forward
+
+~ added collision check between the asteroids and the player
