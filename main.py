@@ -7,6 +7,8 @@ from constants import*
 from player import*
 from asteroid import*
 from asteroidsfield import*
+from shots import*
+
 def main():
     pygame.init()
     screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
@@ -16,11 +18,16 @@ def main():
     updateable = pygame.sprite.Group()
     drawable = pygame.sprite.Group()
     astreoids = pygame.sprite.Group()
+    shots = pygame.sprite.Group()
+    
     Player.containers = (updateable, drawable)
     Asteroid.containers = (astreoids, updateable, drawable)
     AsteroidField.containers = (updateable)
+    Shot.containers = (shots, updateable, drawable)
+
     obstacles = AsteroidField()
     gamer = Player(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2)
+
     while True:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:

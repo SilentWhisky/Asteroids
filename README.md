@@ -12,3 +12,5 @@ and practicing OOT.
 ~ made astreoids spawn in random positions and have contant speed going forward
 
 ~ added collision check between the asteroids and the player
+
+~ gave the player shooting abillity
