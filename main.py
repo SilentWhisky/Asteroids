@@ -19,7 +19,7 @@ def main():
     drawable = pygame.sprite.Group()
     astreoids = pygame.sprite.Group()
     shots = pygame.sprite.Group()
-    
+
     Player.containers = (updateable, drawable)
     Asteroid.containers = (astreoids, updateable, drawable)
     AsteroidField.containers = (updateable)
@@ -39,6 +39,9 @@ def main():
             if asteroid.collision(gamer):
                 print("Game over!")
                 sys.exit()
+            for bullet in shots:
+                if asteroid.collision(bullet):
+                    asteroid.kill()
 
         screen.fill(color="black")
         for thing in drawable:
@@ -48,5 +51,5 @@ def main():
         dt = fps.tick(60) / 1000
 
 if __name__ == "__main__":
-    main()  
+    main()      
 

@@ -3,14 +3,7 @@
 ~ This is a Phython project, building a small game to practice managing different python files
 and practicing OOT.
 
-~ made a BLACK screen window, and Drawn the player [a Trinagle with a CircleShape HITBOX]
+~ The player is a tringle with a circle HITBOX.
+~ Random astreoids with 3 different sizes spawn from random locations.
+~ The player shoots small bullets that splits the asteroids, downsizing from large till it's small and gets killed.
 
-~ made a Rotation to the player, so he can rotate left and right
-
-~ made a Forward and Backward movement for the player
-
-~ made astreoids spawn in random positions and have contant speed going forward
-
-~ added collision check between the asteroids and the player
-
-~ gave the player shooting abillity
